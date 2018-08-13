@@ -13,6 +13,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     private Button glImagePreviewView;
     private Button nativeGraphicalView;
     private Button nativeEGLGraphicalView;
+    private Button nativeImageTextureView;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -23,12 +24,14 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         glImagePreviewView = this.findViewById(R.id.bt_gl_image_preview);
         nativeGraphicalView = this.findViewById(R.id.bt_native_graphical);
         nativeEGLGraphicalView = this.findViewById(R.id.bt_native_egl_graphical);
+        nativeImageTextureView = this.findViewById(R.id.bt_native_image_texture);
 
         imagePreviewView.setOnClickListener(this);
         nativePreviewView.setOnClickListener(this);
         glImagePreviewView.setOnClickListener(this);
         nativeGraphicalView.setOnClickListener(this);
         nativeEGLGraphicalView.setOnClickListener(this);
+        nativeImageTextureView.setOnClickListener(this);
 
     }
 
@@ -55,6 +58,10 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
             case R.id.bt_native_egl_graphical:
                 Intent nativeEGLGraphicalIntent = new Intent(MainActivity.this,NativeEglImageActivity.class);
                 startActivity(nativeEGLGraphicalIntent);
+                break;
+            case R.id.bt_native_image_texture:
+                Intent nativeImageTextureIntent = new Intent(MainActivity.this,NativeTextureActivity.class);
+                startActivity(nativeImageTextureIntent);
                 break;
         }
     }

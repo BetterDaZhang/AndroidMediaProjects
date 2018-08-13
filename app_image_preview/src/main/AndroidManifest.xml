@@ -22,7 +22,8 @@
         <activity android:name=".NativeImagePreviewActivity" />
         <activity android:name=".GLImagePreviewActivity" />
         <activity android:name=".NativeGraphicalActivity" />
-        <activity android:name=".NativeEglImageActivity"></activity>
+        <activity android:name=".NativeEglImageActivity" />
+        <activity android:name=".NativeTextureActivity"></activity>
     </application>
 
 </manifest>

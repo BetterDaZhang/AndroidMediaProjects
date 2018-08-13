@@ -32,4 +32,9 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="Native EGL Graphical"/>
+    <Button
+        android:id="@+id/bt_native_image_texture"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Native Image Texture"/>
 </LinearLayout>
