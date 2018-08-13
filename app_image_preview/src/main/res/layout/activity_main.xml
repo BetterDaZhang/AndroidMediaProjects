@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:orientation="vertical">
+
+    <Button
+        android:id="@+id/bt_image_preview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Image Preview"/>
+    <Button
+        android:id="@+id/bt_native_image_preview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Native Image Preview"/>
+    <Button
+        android:id="@+id/bt_gl_image_preview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="GL Image Preview"/>
+    <Button
+        android:id="@+id/bt_native_graphical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Native Graphical"/>
+    <Button
+        android:id="@+id/bt_native_egl_graphical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Native EGL Graphical"/>
+</LinearLayout>
