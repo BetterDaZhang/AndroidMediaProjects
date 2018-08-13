@@ -1,1 +1,1 @@
-include ':app_image_preview'
+include ':app_image_preview', ':app_audio'
