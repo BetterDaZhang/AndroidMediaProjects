@@ -11,10 +11,14 @@ LOCAL_SRC_FILES = \
     ./librender/GraphicalRender.cpp \
     ./librender/egl_core.cpp \
     ./librender/ImagePreviewControl.cpp \
+    ./librender/pic_preview_texture.cpp \
+    ./librender/TexturePreviewRender.cpp \
+    ./librender/TexturePreviewControl.cpp \
     ./libcommon/GLHelper.cpp \
     ./NativeGraphicalContral.cpp \
     ./NativeEglGraphicalContral.cpp \
-    ./NativeControl.cpp
+    ./NativeControl.cpp \
+    ./NativeTextureControl.cpp
 
 LOCAL_STATIC_LIBRARIES := libpngdecoder libglm
 
