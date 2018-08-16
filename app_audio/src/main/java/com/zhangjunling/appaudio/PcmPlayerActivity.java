@@ -5,7 +5,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 
-import com.zhangjunling.appaudio.pcm_player.PcmPlayControl;
+import com.zhangjunling.appaudio.pcm_player.android.PcmPlayControl;
 
 public class PcmPlayerActivity extends AppCompatActivity implements View.OnClickListener{
 

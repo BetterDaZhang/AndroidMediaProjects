@@ -1,9 +1,8 @@
-package com.zhangjunling.appaudio.pcm_player;
+package com.zhangjunling.appaudio.pcm_player.android;
 
 import android.media.AudioFormat;
 import android.media.AudioManager;
 import android.os.Environment;
-import android.util.Log;
 
 import java.io.File;
 import java.io.IOException;
