@@ -28,10 +28,9 @@ public class ImagePreviewActivity extends AppCompatActivity {
                 String imagePath = Environment.getExternalStorageDirectory().getAbsolutePath() + "/" + "a.png";
                 File imageFile = new File(imagePath);
                 if(imageFile.exists()){
-                    Log.e("lizhibin", "imagePath:" + imagePath);
                     imageSurfaceView.showBitmap2(imagePath);
                 }else{
-                    Log.e("lizhibin", "imageFile not exists.");
+                    Log.e("zhangjunling", "imageFile not exists.");
                 }
 
             }

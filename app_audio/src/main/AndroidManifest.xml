@@ -3,7 +3,7 @@
     package="com.zhangjunling.appaudio">
 
     <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
-    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
     <uses-permission android:name="android.permission.RECORD_AUDIO" />
 
     <application
@@ -21,7 +21,8 @@
             </intent-filter>
         </activity>
         <activity android:name=".AudioRecorderActivity" />
-        <activity android:name=".OpenSLRecordActivity"></activity>
+        <activity android:name=".OpenSLRecordActivity" />
+        <activity android:name=".PcmPlayerActivity"></activity>
     </application>
 
 </manifest>
