@@ -1,4 +1,4 @@
-package com.zhangjunling.appaudio.recorder;
+package com.zhangjunling.appaudio.pcm_recorder;
 
 import android.media.AudioFormat;
 import android.media.AudioRecord;

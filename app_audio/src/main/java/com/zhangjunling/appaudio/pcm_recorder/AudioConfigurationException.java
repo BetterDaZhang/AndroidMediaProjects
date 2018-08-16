@@ -1,4 +1,4 @@
-package com.zhangjunling.appaudio.recorder;
+package com.zhangjunling.appaudio.pcm_recorder;
 
 public class AudioConfigurationException extends Exception {
 
