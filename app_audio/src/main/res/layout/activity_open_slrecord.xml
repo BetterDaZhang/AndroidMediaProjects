@@ -4,19 +4,18 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity"
+    tools:context=".OpenSLRecordActivity"
     android:orientation="vertical">
     <Button
-        android:id="@+id/bt_audiorecord_recorder"
+        android:id="@+id/bt_start"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="AudioRecord Recorder"
-        />
+        android:text="start record"/>
+
     <Button
-        android:id="@+id/bt_opensl_recorder"
+        android:id="@+id/bt_stop"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="OpenSL Recorder"
-        />
+        android:text="stop record"/>
 
 </LinearLayout>
