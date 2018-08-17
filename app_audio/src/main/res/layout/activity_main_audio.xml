@@ -24,5 +24,10 @@
         android:layout_height="wrap_content"
         android:text="AudioTrack Player"
         />
+    <Button
+        android:id="@+id/bt_opensl_player"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="OpenSL Player"/>
 
 </LinearLayout>

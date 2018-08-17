@@ -4,7 +4,9 @@ include $(CLEAR_VARS)
 LOCAL_MODULE := native_audio
 
 LOCAL_SRC_FILES := ./libopensl/OpenSLRecorder.cpp \
-        OpenSLRecordControl.cpp
+        ./libopensl/OpenSLPlayer.cpp \
+        OpenSLRecordControl.cpp \
+        OpenSLPlayerControl.cpp
 
 
 LOCAL_LDLIBS := -llog -lOpenSLES
