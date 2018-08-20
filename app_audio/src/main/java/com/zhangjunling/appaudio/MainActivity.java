@@ -12,6 +12,8 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     private Button mOpenSLRecorderView;
     private Button mAudioTrackPlayerView;
     private Button mOpenSLPlayerView;
+    private Button mAudioMediaCodecView;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -20,11 +22,13 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         mOpenSLRecorderView = this.findViewById(R.id.bt_opensl_recorder);
         mAudioTrackPlayerView = this.findViewById(R.id.bt_audiotrack_plalyer);
         mOpenSLPlayerView = this.findViewById(R.id.bt_opensl_player);
+        mAudioMediaCodecView = this.findViewById(R.id.bt_audio_mediacodec);
 
         mAudioRecordRecorderView.setOnClickListener(this);
         mOpenSLRecorderView.setOnClickListener(this);
         mAudioTrackPlayerView.setOnClickListener(this);
         mOpenSLPlayerView.setOnClickListener(this);
+        mAudioMediaCodecView.setOnClickListener(this);
 
     }
 
@@ -46,6 +50,10 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
             case R.id.bt_opensl_player:
                 Intent openslPlayerIntent = new Intent(MainActivity.this, OpenSLPlayerActivity.class);
                 startActivity(openslPlayerIntent);
+                break;
+            case R.id.bt_audio_mediacodec:
+                Intent audioMediaCodecIntent = new Intent(MainActivity.this, AudioMediaCodecActivity.class);
+                startActivity(audioMediaCodecIntent);
                 break;
         }
     }
