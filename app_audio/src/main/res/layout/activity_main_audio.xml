@@ -33,6 +33,11 @@
         android:id="@+id/bt_audio_mediacodec"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Audio MediaCodec"/>
+        android:text="Audio MediaCodec Encoder"/>
+    <Button
+        android:id="@+id/bt_audio_ffmpeg_encode"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Audio FFmpeg　Encoder"/>
 
 </LinearLayout>

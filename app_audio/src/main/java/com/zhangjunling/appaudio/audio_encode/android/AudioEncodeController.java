@@ -1,7 +1,6 @@
-package com.zhangjunling.appaudio.audio_encode;
+package com.zhangjunling.appaudio.audio_encode.android;
 
 import android.os.Environment;
-import android.util.Log;
 
 import com.zhangjunling.appaudio.pcm_recorder.AudioConfigurationException;
 import com.zhangjunling.appaudio.pcm_recorder.StartRecordingException;
@@ -9,7 +8,6 @@ import com.zhangjunling.appaudio.pcm_recorder.StartRecordingException;
 import java.io.File;
 import java.io.FileOutputStream;
 import java.io.IOException;
-import java.util.Arrays;
 
 public class AudioEncodeController implements OutputPCMDelegate,OutputAACDelegate{
 
@@ -25,7 +23,7 @@ public class AudioEncodeController implements OutputPCMDelegate,OutputAACDelegat
 
     public void prepare() throws AudioConfigurationException, IOException {
         audioRecordRecorder = new AudioRecordRecorder();
-        audioRecordRecorder.initMetaData(this);
+        audioRecordRecorder.initMetaData(this,AudioRecordRecorder.BUFFER_TYPE_BYTE);
 
         audioEncodeEncoder = new AudioEncodeEncoder(this,
                 audioRecordRecorder.getSampleRate(),
@@ -64,9 +62,14 @@ public class AudioEncodeController implements OutputPCMDelegate,OutputAACDelegat
 
     //async 执行
     @Override
-    public void outputPCMPacket(byte[] data) {
+    public void outputPCMPacketInByte(byte[] data) {
         audioEncodeEncoder.fireAudio(data, data.length);
 //        Log.e(TAG, "PCM Data:" + Arrays.toString(data));
+    }
+
+    @Override
+    public void outputPCMPacketInShort(short[] data) {
+
     }
 
     @Override
@@ -80,4 +83,5 @@ public class AudioEncodeController implements OutputPCMDelegate,OutputAACDelegat
             e.printStackTrace();
         }
     }
+
 }

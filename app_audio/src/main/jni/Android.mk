@@ -66,8 +66,10 @@ LOCAL_MODULE := native_audio
 
 LOCAL_SRC_FILES := ./libopensl/OpenSLRecorder.cpp \
         ./libopensl/OpenSLPlayer.cpp \
+        ./libaudioencode/AudioEncoder.cpp \
         OpenSLRecordControl.cpp \
-        OpenSLPlayerControl.cpp
+        OpenSLPlayerControl.cpp \
+        AudioFFmpegControl.cpp
 
 LOCAL_STATIC_LIBRARIES := libavfilter libavformat libavcodec libavutil libswscale libswresample libpostproc libfdk-aac libvo-aacenc libx264  libmp3lame
 

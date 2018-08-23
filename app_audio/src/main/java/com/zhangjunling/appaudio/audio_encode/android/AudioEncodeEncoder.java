@@ -1,4 +1,4 @@
-package com.zhangjunling.appaudio.audio_encode;
+package com.zhangjunling.appaudio.audio_encode.android;
 
 import android.annotation.TargetApi;
 import android.media.MediaCodec;

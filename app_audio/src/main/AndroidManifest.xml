@@ -24,7 +24,8 @@
         <activity android:name=".OpenSLRecordActivity" />
         <activity android:name=".PcmPlayerActivity" />
         <activity android:name=".OpenSLPlayerActivity" />
-        <activity android:name=".AudioMediaCodecActivity"></activity>
+        <activity android:name=".AudioMediaCodecActivity" />
+        <activity android:name=".AudioFFmpegEncodeActivity"></activity>
     </application>
 
 </manifest>

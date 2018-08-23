@@ -5,7 +5,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 
-import com.zhangjunling.appaudio.audio_encode.AudioEncodeController;
+import com.zhangjunling.appaudio.audio_encode.android.AudioEncodeController;
 import com.zhangjunling.appaudio.pcm_recorder.AudioConfigurationException;
 import com.zhangjunling.appaudio.pcm_recorder.StartRecordingException;
 
